@@ -10,7 +10,6 @@
   align-content: center;
 }
 #contenedor1 {
-  padding-top: 2em;
   width: 100vw;
   justify-content: space-evenly;
   display: flex;
@@ -19,13 +18,17 @@
 #contenedor1 li {
   list-style: none;
 }
+#contenedor1 a:hover {
+  background-color: rgb(235, 235, 233);
+  color: brown;
+}
 #contenedor1 a {
   color: white;
+  padding: 1em;
   font-size: 1.2em;
   border: 2px solid white;
   text-decoration: none;
   border-radius: 5px;
-  padding: 0.5em;
 }
 
 #contenedorPrincipal {
@@ -38,4 +41,75 @@
   );
   width: 100vw;
   height: 90vh;
+}
+
+/* Media queries */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  #title {
+    font-size: 1.5em;
+    margin-left: 0.5em;
+  }
+
+  #contenedor1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contenedor1 li {
+    margin: 1.5em;
+  }
+
+  #contenedor1 a {
+    font-size: 1em;
+    padding: 0.8em;
+  }
+
+  #contenedorPrincipal {
+    height: 80vh;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #title {
+    font-size: 2em;
+    margin-left: 1em;
+  }
+
+  #contenedor1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #contenedor1 a {
+    font-size: 1.1em;
+    padding: 0.9em;
+  }
+
+  #contenedorPrincipal {
+    height: 85vh;
+  }
+}
+
+/* Para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+  #title {
+    font-size: 2.5em;
+    margin-left: 1.5em;
+  }
+
+  #contenedor1 {
+    justify-content: space-evenly;
+  }
+
+  #contenedor1 a {
+    font-size: 1.2em;
+    padding: 1em;
+  }
+
+  #contenedorPrincipal {
+    height: 90vh;
+  }
 }
