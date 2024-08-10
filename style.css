@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  height: 10vh;
+  text-align: center;
+  margin-left: 1em;
+  align-content: center;
+}
+#contenedor1 {
+  padding-top: 2em;
+  width: 100vw;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+#contenedor1 li {
+  list-style: none;
+}
+#contenedor1 a {
+  color: white;
+  font-size: 1.2em;
+  border: 2px solid white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+#contenedorPrincipal {
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(
+    135.8deg,
+    rgb(26, 26, 29) 27.1%,
+    rgb(111, 34, 50) 77.5%
+  );
+  width: 100vw;
+  height: 90vh;
+}
