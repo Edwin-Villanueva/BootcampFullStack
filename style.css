@@ -2,15 +2,18 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  width: 100vw;
+  height: 100vh;
+}
 #title {
-  height: 10vh;
+  height: 10%;
   text-align: center;
-  margin-left: 1em;
   align-content: center;
 }
 #contenedor1 {
   width: 100vw;
+  height: 90%;
   justify-content: space-evenly;
   display: flex;
 }
@@ -49,7 +52,6 @@
 @media (max-width: 600px) {
   #title {
     font-size: 1.5em;
-    margin-left: 0.5em;
   }
 
   #contenedor1 {
@@ -75,7 +77,6 @@
 @media (min-width: 601px) and (max-width: 1024px) {
   #title {
     font-size: 2em;
-    margin-left: 1em;
   }
 
   #contenedor1 {
@@ -97,7 +98,6 @@
 @media (min-width: 1025px) {
   #title {
     font-size: 2.5em;
-    margin-left: 1.5em;
   }
 
   #contenedor1 {
