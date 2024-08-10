@@ -2,22 +2,23 @@
   margin: 0;
   padding: 0;
 }
+html,
 body {
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-#title {
+#titulo {
   height: 10%;
   text-align: center;
   align-content: center;
 }
 #contenedor1 {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: 90%;
   justify-content: space-evenly;
   display: flex;
+  box-sizing: border-box;
 }
 
 #contenedor1 li {
@@ -62,12 +63,12 @@ body {
   }
 
   #contenedor1 li {
-    margin: 1.5em;
+    margin: 2.5em;
   }
 
   #contenedor1 a {
-    font-size: 1em;
-    padding: 0.8em;
+    font-size: 1.3em;
+    padding: 1em;
   }
 }
 
