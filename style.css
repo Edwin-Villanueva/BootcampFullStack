@@ -13,7 +13,7 @@ body {
 }
 #contenedor1 {
   width: 100vw;
-  height: 90%;
+  height: 100%;
   justify-content: space-evenly;
   display: flex;
 }
@@ -43,7 +43,7 @@ body {
     rgb(111, 34, 50) 77.5%
   );
   width: 100vw;
-  height: 90vh;
+  height: 90%;
 }
 
 /* Media queries */
@@ -67,10 +67,6 @@ body {
     font-size: 1em;
     padding: 0.8em;
   }
-
-  #contenedorPrincipal {
-    height: 80vh;
-  }
 }
 
 /* Para pantallas medianas (tabletas) */
@@ -88,10 +84,6 @@ body {
     font-size: 1.1em;
     padding: 0.9em;
   }
-
-  #contenedorPrincipal {
-    height: 85vh;
-  }
 }
 
 /* Para pantallas grandes (escritorio) */
@@ -107,9 +99,5 @@ body {
   #contenedor1 a {
     font-size: 1.2em;
     padding: 1em;
-  }
-
-  #contenedorPrincipal {
-    height: 90vh;
   }
 }
