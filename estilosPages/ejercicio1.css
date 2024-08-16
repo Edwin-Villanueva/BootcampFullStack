@@ -7,4 +7,70 @@ body {
   height: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+h1 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+form {
+  padding: 2em;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: 5px;
+
+  padding: 2px;
+}
+/* Estilos de alto contraste */
+body.alto-contraste {
+  background-color: #000;
+  color: #fff;
+}
+
+body.alto-contraste form {
+  color: #ffff00;
+  background-color: #000;
+}
+
+body.alto-contraste button {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+body.alto-contraste h1 {
+  color: #fff;
+  border-color: #fff;
+}
+
+body.alto-contraste a {
+  color: #000;
+}
+
+body.alto-contraste #Home {
+  background-color: #ffff00;
+}
+body.alto-contraste #Alto {
+  background-color: black;
+  border: 1px solid #ffff00;
+  color: white;
 }
