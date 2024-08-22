@@ -1,4 +1,15 @@
+document.getElementById("Alto").addEventListener("click", function () {
+  document.body.classList.toggle("alto-contraste");
+
+  if (document.body.classList.contains("alto-contraste")) {
+    this.textContent = "Contraste Normal";
+  } else {
+    this.textContent = "Alto Contraste";
+  }
+});
+
 document.getElementById("datosForm").addEventListener("submit", function (e) {
+  e.preventDefault();
   const nombre = document.getElementById("nombre").value.trim();
   const apellido = document.getElementById("apellido").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -7,18 +18,15 @@ document.getElementById("datosForm").addEventListener("submit", function (e) {
 
   let formatoValido = true;
   if (nombre === "" || !/^[a-zA-Z]+$/.test(nombre)) {
-    //corregido
     alert("Por favor, ingresa un nombre válido.");
     formatoValido = false;
   }
   if (apellido === "" || !/^[a-zA-Z]+$/.test(apellido)) {
-    //corregido
     alert("Por favor, ingresa un apellido válido.");
-    formatoValido = false; //corregido
+    formatoValido = false;
   }
   //////////////////////////////////////////////////////////
   if (email.length < 5 || email.length > 50) {
-    // se corrigio para que luego de verificar la longitud se verifique que sea valido
     alert("El correo debe tener entre 5 y 50 caracteres.");
     formatoValido = false;
   } else {
@@ -40,11 +48,15 @@ document.getElementById("datosForm").addEventListener("submit", function (e) {
   }
 
   if (pais === "" || !/^[a-zA-Z]+$/.test(pais)) {
-    //corregido
     alert("Por favor, ingresa un país de residencia válido.");
     formatoValido = false;
   }
-  if (!formatoValido) {
-    e.preventDefault();
+  if (formatoValido) {
+    document.getElementById("mensaje").innerHTML =
+      "Formulario enviado correctamente.<br>Serás redirigido a la página de inicio en unos segundos...";
+
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 3000);
   }
 });
